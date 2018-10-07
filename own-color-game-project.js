@@ -8,7 +8,7 @@ var colorLists = [];
 var colorBoxes;
 var heading = document.querySelector(".headings")
 var text = document.querySelector(".hidden")
-
+var expertButton = document.querySelector("#expert")
 randomBoxColor()
 
 newColors.addEventListener('click', function () {
@@ -24,14 +24,22 @@ hardButton.addEventListener('click', function () {
     randomBoxColor()
     this.classList.add("active")
     easyButton.classList.remove("active")
-
+    expertButton.classList.remove("active")
 })
 easyButton.addEventListener('click', function () {
     document.querySelector(".color-box-container").innerHTML = colorBox.repeat(3);
     randomBoxColor()    
     this.classList.add("active")
     hardButton.classList.remove("active")
+    expertButton.classList.remove("active")
+})
 
+expertButton.addEventListener('click', function () {
+    document.querySelector(".color-box-container").innerHTML = colorBox.repeat(9);
+    randomBoxColor()    
+    this.classList.add("active")
+    easyButton.classList.remove("active")
+    hardButton.classList.remove("active")
 })
 
 
@@ -70,6 +78,3 @@ for (var i = 0 ; i < colorBoxes.length; i++) {
     })
 }
 }
-
-// random select one
-
