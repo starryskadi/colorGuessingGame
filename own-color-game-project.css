@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+}
+html {
+    height: 100%;
+    background: black;
+}
+.headings   {
+    text-align: center;
+    background: rgb(29, 155, 228);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 0.5s;
+}
+h2, h1 {
+    margin: 0;
+}
+.right-color-code {
+    font-size: 3em;
+}
+.game-options {
+    text-align: center;
+    padding: 0 30%;
+    text-transform: uppercase;
+    color: rgb(16, 126, 190);
+    background: white;
+}
+.float-left {
+    float:left
+}
+.float-right {
+    float:right;
+    padding: 0 1%;
+}
+.active {
+    background:  rgb(16, 126, 190);
+    color: white;
+}
+.color-box {
+    width: 30%;
+    height: 20%;
+    background: white;
+    float: left;
+    margin: 4px;
+    border-radius: 20px;
+}
+.color-box-container {
+    height: 100%;
+    margin: 0 30%;
+}
+.hide {
+    opacity: 0;
+    transition: 0.5s;
+}
+.hidden {
+    visibility: hidden;
+}
