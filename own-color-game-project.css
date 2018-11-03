@@ -50,6 +50,7 @@ h2, h1 {
 .color-box-container {
     max-width: 600px;
     margin: 0 auto;
+    height: 100%
 }
 .hide {
     opacity: 0;
